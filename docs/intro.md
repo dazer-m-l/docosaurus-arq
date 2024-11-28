@@ -1,22 +1,41 @@
 ---
 sidebar_position: 1
 ---
+# Patrón Observer
 
-# patrón Observer
+El patrón **Observer** pertenece a los patrones de diseño de comportamiento. Establece una relación **uno-a-muchos** entre objetos, de forma que cuando un objeto (*sujeto*) cambia su estado, todos los objetos dependientes (*observadores*) son notificados automáticamente.
 
-El patrón Observer es uno de los patrones de diseño más utilizados en la programación orientada a objetos. Se clasifica dentro de los patrones de comportamiento y su principal función es establecer una relación de dependencia uno a muchos entre objetos, de manera que cuando un objeto cambia su estado, todos los objetos que dependen de él son notificados y actualizados automáticamente. Este patrón es especialmente útil en situaciones en las que múltiples objetos necesitan conocer y reaccionar a los cambios en el estado de otro objeto.
+---
 
-## Componentes del patrón Observer
-Para comprender mejor cómo funciona el patrón Observer, es importante conocer sus componentes clave:
+## Representación gráfica
+El diagrama UML del patrón Observer se ve así:
 
-- El **sujeto observable** es el objeto que mantiene una lista de observadores y notifica a estos observadores cuando cambia su estado. Puede haber varios sujetos observables en una aplicación, y cada uno puede tener su propia lista de observadores.
+![Diagrama UML del patrón Observer](https://refactoring.guru/images/patterns/diagrams/observer/structure.png)
 
-- Los **observadores** son objetos que desean ser notificados cuando cambia el estado del sujeto observable. Cada observador implementa una interfaz o clase abstracta que define un método de actualización. Este método se llama automáticamente cuando el sujeto observable notifica un cambio.
+1. **Subject** (Sujeto): Define una interfaz para agregar, eliminar y notificar observadores.
+2. **ConcreteSubject** (Sujeto Concreto): Implementa el sujeto, almacena su estado y notifica a los observadores sobre los cambios.
+3. **Observer** (Observador): Interfaz que define el método `update()`.
+4. **ConcreteObserver** (Observador Concreto): Implementa la interfaz `Observer` y reacciona a las notificaciones del sujeto.
+
+---
 
 
-## Beneficios del patrón Observer
-El patrón Observer ofrece varios beneficios importantes en el desarrollo de software:
+---
 
-- **Desacoplamiento:**los sujetos observables y los observadores están desacoplados, lo que significa que pueden cambiar y evolucionar de forma independiente sin afectarse mutuamente.
-- **Modularidad** puede agregar nuevos observadores sin modificar el código del sujeto observable. Esto facilita la extensibilidad del sistema.
-Reutilización de código: los observadores se pueden reutilizar en diferentes contextos, ya que no dependen del sujeto observable específico.
+## Características principales
+### ¿Cuándo usarlo?
+- Cuando varios objetos necesitan ser informados de un cambio en el estado de otro objeto.
+- Para implementar sistemas **reactivos**, donde el cambio en un objeto desencadena actualizaciones automáticas.
+
+### Ventajas
+1. **Desacoplamiento**: Los observadores no necesitan conocer los detalles del sujeto.
+2. **Escalabilidad**: Es fácil agregar o eliminar observadores sin modificar el sujeto.
+3. **Flexibilidad**: Los objetos pueden comunicarse de manera dinámica.
+
+### Desventajas
+1. **Complejidad**: Aumenta con el número de sujetos y observadores.
+2. **Costos de rendimiento**: La notificación puede volverse costosa si hay demasiados observadores.
+3. **Orden de actualización**: No hay garantía sobre el orden en que se notifican los observadores.
+
+---
+
