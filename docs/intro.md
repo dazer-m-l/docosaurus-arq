@@ -2,22 +2,11 @@
 sidebar_position: 1
 ---
 
-# Tutorial Intro
+# patrón Observer
 
-Let's discover **Docusaurus in less than 5 minutes**.
+El patrón Observer es uno de los patrones de diseño más utilizados en la programación orientada a objetos. Se clasifica dentro de los patrones de comportamiento y su principal función es establecer una relación de dependencia uno a muchos entre objetos, de manera que cuando un objeto cambia su estado, todos los objetos que dependen de él son notificados y actualizados automáticamente. Este patrón es especialmente útil en situaciones en las que múltiples objetos necesitan conocer y reaccionar a los cambios en el estado de otro objeto.
 
-## Getting Started
-
-Get started by **creating a new site**.
-
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
-
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 18.0 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
+## Componentes del patrón Observer
 
 Generate a new Docusaurus site using the **classic template**.
 
