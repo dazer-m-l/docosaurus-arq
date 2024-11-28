@@ -45,3 +45,10 @@ Para comprender mejor cómo funciona el patrón Observer, es importante conocer 
 
 ---
 
+## Implementación del patrón Observer
+La implementación del patrón Observer varía según el lenguaje de programación utilizado. Sin embargo, el flujo general de cómo funciona este patrón permanece constante. Aquí hay un resumen de los pasos típicos para implementar el patrón Observer:
+
+1. **Definir la interfaz del observador:** crea una interfaz o clase abstracta que declare el método de actualización que los observadores deben implementar.
+2. **Implementar observadores:** crea clases concretas que implementen la interfaz del observador. Estas clases definirán cómo reaccionarán ante las notificaciones del sujeto observable.
+3. **Definir el sujeto observable:** crea una clase para el sujeto observable y agregue métodos para registrar, eliminar y notificar observadores. También debe mantener un estado interno que pueda cambiar con el tiempo.
+4. **Notificar a los observadores:** cuando el estado del sujeto observable cambie, llame al método de notificación y pase los datos relevantes a todos los observadores registrados.
