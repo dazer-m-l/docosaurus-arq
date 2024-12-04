@@ -52,3 +52,5 @@ La implementación del patrón Observer varía según el lenguaje de programaci�
 2. **Implementar observadores:** crea clases concretas que implementen la interfaz del observador. Estas clases definirán cómo reaccionarán ante las notificaciones del sujeto observable.
 3. **Definir el sujeto observable:** crea una clase para el sujeto observable y agregue métodos para registrar, eliminar y notificar observadores. También debe mantener un estado interno que pueda cambiar con el tiempo.
 4. **Notificar a los observadores:** cuando el estado del sujeto observable cambie, llame al método de notificación y pase los datos relevantes a todos los observadores registrados.
+
+---
