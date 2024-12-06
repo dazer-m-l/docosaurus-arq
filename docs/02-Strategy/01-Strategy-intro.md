@@ -1,0 +1,6 @@
+# Introducción al patrón Strategy
+El patrón Strategy pertenece a los patrones de diseño de comportamiento, cuyo propósito principal es mejorar cómo los objetos interactúan y se relacionan entre sí. En este caso, el patrón facilita la definición de una familia de algoritmos, encapsulándolos en clases independientes que pueden intercambiarse en tiempo de ejecución sin necesidad de modificar el código que los utiliza. Este enfoque se basa en el principio de programación orientada a objetos conocido como "abierto para extensión, cerrado para modificación", promoviendo la reutilización de código y el desacoplamiento entre los componentes.
+
+En esencia, el patrón Strategy consiste en un contexto (la clase principal que realiza una operación) y varias estrategias concretas (clases que implementan diferentes algoritmos o comportamientos). El contexto utiliza una interfaz común para interactuar con las estrategias, permitiendo que estas sean fácilmente intercambiables. Esto resulta especialmente útil en escenarios donde se deben soportar múltiples opciones o variaciones de un comportamiento, como métodos de pago, técnicas de autenticación, estrategias de compresión, o algoritmos de búsqueda.
+
+![Strategy Pattern](https://refactoring.guru/images/patterns/content/strategy/strategy.png?id=379bfba335380500375881a3da6507e0)
