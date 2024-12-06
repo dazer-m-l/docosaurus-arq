@@ -4,42 +4,70 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Patron Observer',
+    imgSrc: '/img/Patron_Observer.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Permite que múltiples objetos <code>observadores</code> se suscriban a un objeto principal <code>sujeto</code> y sean notificados automáticamente cuando su estado cambie. Es útil para implementar sistemas de eventos o notificaciones
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Patron Strategy',
+    imgSrc: '/img/Patron_Strategy.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Define una familia de algoritmos, encapsula cada uno y permite intercambiarlos dinámicamente. Ayuda a seleccionar el comportamiento de un objeto en tiempo de ejecución, sin alterar su estructura.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Patron Command',
+    imgSrc: '/img/Patron_Command.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Encapsula una solicitud como un objeto, permitiendo parametrizar acciones, realizar <code>deshacer/rehacer</code> y ejecutar comandos de manera diferida. Es ideal para implementar colas de tareas o sistemas de transacciones.
+      </>
+    ),
+  },
+  {
+    title: 'Patron State',
+    imgSrc: '/img/Patron_State.png',
+    description: (
+      <>
+        Permite que un objeto cambie su comportamiento cuando su estado interno cambia. Es útil para manejar máquinas de estados y simplificar código complejo relacionado con múltiples condiciones.
+      </>
+    ),
+  },
+  {
+    title: 'Patron Template Method',
+    imgSrc: '/img/Patron_Template_Method.png',
+    description: (
+      <>
+        Define el esqueleto de un algoritmo en una clase base y permite que las subclases redefinan pasos específicos sin alterar la estructura general. Es ideal para evitar duplicación de código y establecer flujos estandarizados.
+      </>
+    ),
+  },
+  {
+    title: 'Patron Visitor',
+    imgSrc: '/img/Patron_Visitor.png',
+    description: (
+      <>
+        Separa operaciones de los objetos sobre los que actúan, permitiendo agregar nuevas operaciones sin modificar las clases originales. Es útil para aplicar múltiples operaciones en estructuras complejas, como árboles o colecciones de objetos.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({Svg, imgSrc, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        {Svg ? (
+          <Svg className={styles.featureSvg} role="img" />
+        ) : (
+          <img src={imgSrc} alt={title} className={styles.featureImg} />
+        )}
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

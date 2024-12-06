@@ -48,6 +48,7 @@ const config = {
           editUrl:
             'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
+        
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -71,8 +72,9 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'Patrones de Diseño',
           },
+          
           {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
