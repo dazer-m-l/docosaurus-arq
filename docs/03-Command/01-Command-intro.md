@@ -16,3 +16,5 @@ El patrón Command es ideal para situaciones donde se necesita:
 - **Macros:** Encadenar múltiples comandos para ejecutarlos en secuencia.
 
 El patrón Command es una herramienta poderosa para estructurar aplicaciones que requieren operaciones dinámicas, reversibles o altamente configurables, proporcionando una base sólida para sistemas flexibles y extensibles.
+
+![Command Pattern](https://refactoring.guru/images/patterns/content/command/command-es.png?id=aa52c5ce63cbff0adf7dfcc5909f7eb4)
