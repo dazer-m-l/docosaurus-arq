@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Patrones de diseño de comportamiento',
   tagline: 'Proyecto de Gitub',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/patrones-comportamiento.jpg',
 
   // Set the production url of your site here
   url: 'https://your-docusaurus-site.example.com',

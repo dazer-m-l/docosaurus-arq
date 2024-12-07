@@ -1,3 +1,6 @@
+---
+sidebar_position: 1
+---
 # Patrones de Diseño de Comportamiento
 
 Los **patrones de diseño de comportamiento** se enfocan en la asignación de responsabilidades entre los objetos y la forma en que colaboran entre sí, optimizando la comunicación y evitando el acoplamiento excesivo.
