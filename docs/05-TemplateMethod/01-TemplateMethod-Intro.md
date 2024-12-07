@@ -32,10 +32,3 @@ Con este enfoque, las subclases pueden implementar las variaciones específicas 
 ---
 
 En los siguientes apartados, exploraremos las características, ventajas, desventajas y ejemplos detallados del patrón **Template Method**.
-
-### Próximos pasos
-
-1. [Características del Patrón Template](./02-TemplateMethod-Caracteristicas.md)  
-2. [Ventajas y Desventajas](./03-TemplateMethod-Ventaja-Desventaja.md)  
-3. [Ejemplo práctico](./04-TemplateMethod-Ejemplo.md)  
-

@@ -29,12 +29,3 @@ El patrón State simplifica la lógica al delegar el comportamiento relacionado 
 - **Facilitar la adición de nuevos estados sin modificar el código existente**.
 
 En los siguientes documentos, profundizaremos en las características, ventajas, desventajas y casos de uso del patrón State, junto con un ejemplo práctico.
-
----
-
-### Próximos pasos
-
-1. [Características del Patrón State](./02-State-Caracteristicas.md)  
-2. [Ventajas y Desventajas](./03-State-Ventaja-Desventaja.md)  
-3. [Ejemplo práctico](./04-State-Ejemplo.md)  
-
